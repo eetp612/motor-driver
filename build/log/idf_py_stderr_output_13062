@@ -1,0 +1,60 @@
+--- esp-idf-monitor 1.10.0 on /dev/ttyACM0 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x400490cc: usb_uart_device_rx_one_char in ROM
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- WARNING: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr_handler at /home/gopre/.espressif/v5.3.5/esp-idf/components/esp_system/port/brownout.c:61
+--- 0x4037580e: rtc_brownout_isr

@@ -196,74 +196,60 @@ duty_t duty_for(int motor, rpm_t rpm)
 //
 // ============================================================
 
+static float clamp_motor(float value)
+{
+    if (value > 1.0f) return 1.0f;
+    if (value < -1.0f) return -1.0f;
+    return value;
+}
+
+static motor_drive_t make_motor_drive(float velocity)
+{
+    motor_drive_t drive = {0};
+
+    velocity = clamp_motor(velocity);
+
+    drive.duty = (duty_t)(fabsf(velocity) * 100.0f);
+
+    if (velocity > 0.0f)
+    {
+        drive.in1 = 1;
+        drive.in2 = 0;
+    }
+    else if (velocity < 0.0f)
+    {
+        drive.in1 = 0;
+        drive.in2 = 1;
+    }
+    else
+    {
+        drive.in1 = 0;
+        drive.in2 = 0;
+    }
+
+    return drive;
+}
+
 motor_drive_pair_t transform_cmd_vel(cmd_vel_msg_trunc msgt)
 {
-    // Acotamos angular_z a [-1, 1]
-    float z_0 = fmaxf(
-        -1.0f,
-        fminf(1.0f, msgt.angular_z)
+    float linear = clamp_motor(msgt.linear_x);
+    float angular = clamp_motor(msgt.angular_z);
+
+    float left_velocity  = linear - angular;
+    float right_velocity = linear + angular;
+
+    // Normalizamos para mantener ambos valores en [-1, 1].
+    float max_velocity = fmaxf(
+        1.0f,
+        fmaxf(fabsf(left_velocity), fabsf(right_velocity))
     );
 
-    // Convertimos el signo a {-1, 0, +1}
-    int z = (z_0 > 0.0f) - (z_0 < 0.0f);
+    left_velocity  /= max_velocity;
+    right_velocity /= max_velocity;
 
-    // Acotamos linear_x a [-1, 1]
-    float x = fmaxf(
-        -1.0f,
-        fminf(1.0f, msgt.linear_x)
-    );
-
-    // --------------------------------------------------------
-    // Dirección motor izquierdo
-    // --------------------------------------------------------
-
-    uint8_t l_in1 = MAX(
-        0,
-        abs(z - 1) - 1
-    );
-
-    uint8_t l_in2 = MAX(
-        0,
-        abs(z + 1) - 1
-    );
-
-    // --------------------------------------------------------
-    // Dirección motor derecho
-    // --------------------------------------------------------
-
-    uint8_t r_in1 = MAX(
-        0,
-        abs(z + 1) - 1
-    );
-
-    uint8_t r_in2 = MAX(
-        0,
-        abs(z - 1) - 1
-    );
-
-    // --------------------------------------------------------
-    // Motor izquierdo
-    // --------------------------------------------------------
-
-    motor_drive_t motor_drive_l = {
-        .duty = (duty_t)(100.0f * fabsf(x)),
-        .in1 = l_in1,
-        .in2 = l_in2
-    };
-
-    // --------------------------------------------------------
-    // Motor derecho
-    // --------------------------------------------------------
-
-    motor_drive_t motor_drive_r = {
-        .duty = (duty_t)(100.0f * fabsf(x)),
-        .in1 = r_in1,
-        .in2 = r_in2
-    };
-
-    return (motor_drive_pair_t){
-        .left = motor_drive_l,
-        .right = motor_drive_r
+    return (motor_drive_pair_t) {
+        .left = make_motor_drive(left_velocity),
+        .right = make_motor_drive(right_velocity)
     };
 }
 
@@ -649,25 +635,29 @@ void micro_ros_task(void *arg)
 // ============================================================
 // app_main
 // ============================================================
-
 void app_main(void)
 {
-#if defined(CONFIG_MICRO_ROS_ESP_NETIF_WLAN) || \
-    defined(CONFIG_MICRO_ROS_ESP_NETIF_ENET)
+    ESP_LOGI("MAIN", "Starting motor driver");
 
-    ESP_ERROR_CHECK(
-        uros_network_interface_initialize()
-    );
-
-#endif
-
-    // Inicializamos PWM
-    motor_pwm_init();
-
-    // Inicializamos GPIOs
+    ESP_LOGI("MAIN", "Initializing motor GPIO");
     motor_gpio_init();
 
-    xTaskCreate(
+    ESP_LOGI("MAIN", "Initializing motor PWM");
+    motor_pwm_init();
+
+    ESP_LOGI("MAIN", "Initializing micro-ROS network");
+
+    esp_err_t err = uros_network_interface_initialize();
+
+    if (err != ESP_OK) {
+        ESP_LOGE("MAIN", "Network initialization failed: %s",
+                 esp_err_to_name(err));
+        return;
+    }
+
+    ESP_LOGI("MAIN", "Creating micro-ROS task");
+
+    BaseType_t result = xTaskCreate(
         micro_ros_task,
         "uros_task",
         CONFIG_MICRO_ROS_APP_STACK,
@@ -675,4 +665,11 @@ void app_main(void)
         CONFIG_MICRO_ROS_APP_TASK_PRIO,
         NULL
     );
+
+    if (result != pdPASS) {
+        ESP_LOGE("MAIN", "Failed to create micro-ROS task");
+        return;
+    }
+
+    ESP_LOGI("MAIN", "Application initialized successfully");
 }

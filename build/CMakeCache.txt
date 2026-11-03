@@ -356,7 +356,7 @@ Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 Mbed TLS_SOURCE_DIR:STATIC=/home/gopre/.espressif/v5.3.5/esp-idf/components/mbedtls/mbedtls
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python
+PYTHON:UNINITIALIZED=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
@@ -601,7 +601,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.43.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python][cfound components: Interpreter ][v3.12.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python][cfound components: Interpreter ][v3.12.3()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -612,10 +612,10 @@ _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
-_Python3_EXECUTABLE:INTERNAL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python
+_Python3_EXECUTABLE:INTERNAL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;32;64;;;abi3;/usr/lib/python3.12;/home/gopre/.espressif/python_env/idf5.3_py3.12_env/lib/python3.12;/home/gopre/.espressif/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages;/home/gopre/.espressif/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=9d78714feec56a6417b31fd1595e54c0
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;32;64;;;abi3;/usr/lib/python3.12;/home/gopre/.espressif/tools/python/v5.3.5/venv/lib/python3.12;/home/gopre/.espressif/tools/python/v5.3.5/venv/lib/python3.12/site-packages;/home/gopre/.espressif/tools/python/v5.3.5/venv/lib/python3.12/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=f208d2781d35c55fced25f6b1940dd92
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "motor-driver",
-    "project_version":    "1",
+    "project_version":    "96619ae-dirty",
     "project_path":       "/home/gopre/Desktop/motor-driver",
     "idf_path":           "/home/gopre/.espressif/v5.3.5/esp-idf",
     "build_dir":          "/home/gopre/Desktop/motor-driver/build",

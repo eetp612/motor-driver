@@ -1,0 +1,74 @@
+[0/2] Re-checking globbed directories...
+[1/6] cd /home/gopre/Desktop/motor-driver/build/esp-idf/esptool_py && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/gopre/Desktop/motor-driver/build/partition_table/partition-table.bin /home/gopre/Desktop/motor-driver/build/motor-driver.bin
+motor-driver.bin binary size 0xc9490 bytes. Smallest app partition is 0x100000 bytes. 0x36b70 bytes (21%) free.
+[2/6] Performing build step for 'bootloader'
+[1/1] cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/esptool_py && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin
+Bootloader binary size 0x5430 bytes. 0x2bd0 bytes (34%) free.
+[3/6] No install step for 'bootloader'
+[4/6] Completed 'bootloader'
+[4/6] cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;;/home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/gopre/Desktop/motor-driver/build -P /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 motor-driver.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.0
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: ac:a7:04:26:c1:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000d9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21552 bytes to 13251...
+Writing at 0x00000000... (100 %)
+Wrote 21552 bytes (13251 compressed) at 0x00000000 in 0.3 seconds (effective 540.8 kbit/s)...
+Hash of data verified.
+Compressed 824464 bytes to 516676...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d145... (6 %)
+Writing at 0x00026504... (9 %)
+Writing at 0x00031956... (12 %)
+Writing at 0x00037df2... (15 %)
+Writing at 0x0003e74b... (18 %)
+Writing at 0x00044174... (21 %)
+Writing at 0x0004a130... (25 %)
+Writing at 0x0004ffbf... (28 %)
+Writing at 0x000557dd... (31 %)
+Writing at 0x0005b580... (34 %)
+Writing at 0x00061293... (37 %)
+Writing at 0x00066e44... (40 %)
+Writing at 0x0006ceb4... (43 %)
+Writing at 0x000729e8... (46 %)
+Writing at 0x0007880b... (50 %)
+Writing at 0x0007d8e9... (53 %)
+Writing at 0x00083074... (56 %)
+Writing at 0x000887cd... (59 %)
+Writing at 0x0008dcdc... (62 %)
+Writing at 0x000931a1... (65 %)
+Writing at 0x00098d4a... (68 %)
+Writing at 0x0009e6a1... (71 %)
+Writing at 0x000a448e... (75 %)
+Writing at 0x000a9e97... (78 %)
+Writing at 0x000af645... (81 %)
+Writing at 0x000b8077... (84 %)
+Writing at 0x000bdec6... (87 %)
+Writing at 0x000c42a8... (90 %)
+Writing at 0x000ca2d9... (93 %)
+Writing at 0x000d09e8... (96 %)
+Writing at 0x000d601d... (100 %)
+Wrote 824464 bytes (516676 compressed) at 0x00010000 in 5.3 seconds (effective 1248.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 602.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

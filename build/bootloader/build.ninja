@@ -202,7 +202,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Custom command for CMakeFiles/menuconfig
 
 build CMakeFiles/menuconfig | ${cmake_ninja_workdir}CMakeFiles/menuconfig: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.5 --dont-write-deprecated --output config /home/gopre/Desktop/motor-driver/sdkconfig && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/check_term.py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/home/gopre/Desktop/motor-driver/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.3.5 /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python -m menuconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.5 --output header /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.h --output cmake /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.cmake --output json /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.json --output json_menus /home/gopre/Desktop/motor-driver/build/bootloader/config/kconfig_menus.json
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.5 --dont-write-deprecated --output config /home/gopre/Desktop/motor-driver/sdkconfig && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/check_term.py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/home/gopre/Desktop/motor-driver/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.3.5 /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python -m menuconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.3.5 --output header /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.h --output cmake /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.cmake --output json /home/gopre/Desktop/motor-driver/build/bootloader/config/sdkconfig.json --output json_menus /home/gopre/Desktop/motor-driver/build/bootloader/config/kconfig_menus.json
   pool = console
 
 
@@ -210,7 +210,7 @@ build CMakeFiles/menuconfig | ${cmake_ninja_workdir}CMakeFiles/menuconfig: CUSTO
 # Custom command for CMakeFiles/confserver
 
 build CMakeFiles/confserver | ${cmake_ninja_workdir}CMakeFiles/confserver: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfserver --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python -m kconfserver --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig
   pool = console
 
 
@@ -218,7 +218,7 @@ build CMakeFiles/confserver | ${cmake_ninja_workdir}CMakeFiles/confserver: CUSTO
 # Custom command for CMakeFiles/save-defconfig
 
 build CMakeFiles/save-defconfig | ${cmake_ninja_workdir}CMakeFiles/save-defconfig: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /home/gopre/.espressif/v5.3.5/esp-idf/components/bootloader/subproject/sdkconfig.defaults
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python -m kconfgen --list-separator=semicolon --kconfig /home/gopre/.espressif/v5.3.5/esp-idf/Kconfig --sdkconfig-rename /home/gopre/.espressif/v5.3.5/esp-idf/sdkconfig.rename --config /home/gopre/Desktop/motor-driver/sdkconfig --env-file /home/gopre/Desktop/motor-driver/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /home/gopre/.espressif/v5.3.5/esp-idf/components/bootloader/subproject/sdkconfig.defaults
   pool = console
 
 
@@ -232,7 +232,7 @@ build CMakeFiles/gen_project_binary | ${cmake_ninja_workdir}CMakeFiles/gen_proje
 # Custom command for .bin_timestamp
 
 build .bin_timestamp | ${cmake_ninja_workdir}.bin_timestamp: CUSTOM_COMMAND bootloader.elf || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32s3 elf2image --flash_mode dio --flash_freq 80m --flash_size 2MB --min-rev-full 0 --max-rev-full 99 -o /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.elf && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E echo "Generated /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin" && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E md5sum /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin > /home/gopre/Desktop/motor-driver/build/bootloader/.bin_timestamp
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32s3 elf2image --flash_mode dio --flash_freq 80m --flash_size 2MB --min-rev-full 0 --max-rev-full 99 -o /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.elf && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E echo "Generated /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin" && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -E md5sum /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin > /home/gopre/Desktop/motor-driver/build/bootloader/.bin_timestamp
   DESC = Generating binary image from built executable
   restat = 1
 
@@ -247,7 +247,7 @@ build CMakeFiles/app | ${cmake_ninja_workdir}CMakeFiles/app: phony || _project_e
 # Custom command for CMakeFiles/erase_flash
 
 build CMakeFiles/erase_flash | ${cmake_ninja_workdir}CMakeFiles/erase_flash: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;;/home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D SERIAL_TOOL_ARGS=erase_flash -P run_serial_tool.cmake
+  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;;/home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D SERIAL_TOOL_ARGS=erase_flash -P run_serial_tool.cmake
   pool = console
 
 
@@ -255,7 +255,7 @@ build CMakeFiles/erase_flash | ${cmake_ninja_workdir}CMakeFiles/erase_flash: CUS
 # Custom command for CMakeFiles/merge-bin
 
 build CMakeFiles/merge-bin | ${cmake_ninja_workdir}CMakeFiles/merge-bin: CUSTOM_COMMAND bootloader || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a gen_project_binary
-  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;;/home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=merge_bin;-o;/home/gopre/Desktop/motor-driver/build/bootloader/merged-binary.bin;@/home/gopre/Desktop/motor-driver/build/bootloader/flash_args" -D WORKING_DIRECTORY=/home/gopre/Desktop/motor-driver/build/bootloader -P run_serial_tool.cmake
+  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;;/home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=merge_bin;-o;/home/gopre/Desktop/motor-driver/build/bootloader/merged-binary.bin;@/home/gopre/Desktop/motor-driver/build/bootloader/flash_args" -D WORKING_DIRECTORY=/home/gopre/Desktop/motor-driver/build/bootloader -P run_serial_tool.cmake
   pool = console
 
 
@@ -263,7 +263,7 @@ build CMakeFiles/merge-bin | ${cmake_ninja_workdir}CMakeFiles/merge-bin: CUSTOM_
 # Custom command for CMakeFiles/monitor
 
 build CMakeFiles/monitor | ${cmake_ninja_workdir}CMakeFiles/monitor: CUSTOM_COMMAND || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a
-  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_monitor" -D "SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32s3-elf-;;--target;esp32s3;;--revision;0;;/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY=/home/gopre/Desktop/motor-driver/build/bootloader -P run_serial_tool.cmake
+  COMMAND = cd /home/gopre/.espressif/v5.3.5/esp-idf/components/esptool_py && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "SERIAL_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;-m;esp_idf_monitor" -D "SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32s3-elf-;;--target;esp32s3;;--revision;0;;/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY=/home/gopre/Desktop/motor-driver/build/bootloader -P run_serial_tool.cmake
   pool = console
 
 
@@ -286,7 +286,7 @@ build project_elf_src_esp32s3.c | ${cmake_ninja_workdir}project_elf_src_esp32s3.
 # Custom command for CMakeFiles/size
 
 build CMakeFiles/size | ${cmake_ninja_workdir}CMakeFiles/size: CUSTOM_COMMAND bootloader.map
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
   pool = console
 
 
@@ -294,7 +294,7 @@ build CMakeFiles/size | ${cmake_ninja_workdir}CMakeFiles/size: CUSTOM_COMMAND bo
 # Custom command for CMakeFiles/size-files
 
 build CMakeFiles/size-files | ${cmake_ninja_workdir}CMakeFiles/size-files: CUSTOM_COMMAND bootloader.map
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--files -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--files -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
   pool = console
 
 
@@ -302,7 +302,7 @@ build CMakeFiles/size-files | ${cmake_ninja_workdir}CMakeFiles/size-files: CUSTO
 # Custom command for CMakeFiles/size-components
 
 build CMakeFiles/size-components | ${cmake_ninja_workdir}CMakeFiles/size-components: CUSTOM_COMMAND bootloader.map
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D "IDF_SIZE_TOOL=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/home/gopre/Desktop/motor-driver/build/bootloader/bootloader.map -D OUTPUT_JSON= -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_size_tool.cmake
   pool = console
 
 
@@ -310,7 +310,7 @@ build CMakeFiles/size-components | ${cmake_ninja_workdir}CMakeFiles/size-compone
 # Custom command for CMakeFiles/dfu
 
 build CMakeFiles/dfu | ${cmake_ninja_workdir}CMakeFiles/dfu: CUSTOM_COMMAND bootloader || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a gen_project_binary
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/mkdfu.py write -o /home/gopre/Desktop/motor-driver/build/bootloader/dfu.bin --json /home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json --pid 9 --flash-size 2MB
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/tools/mkdfu.py write -o /home/gopre/Desktop/motor-driver/build/bootloader/dfu.bin --json /home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json --pid 9 --flash-size 2MB
   pool = console
 
 
@@ -334,7 +334,7 @@ build CMakeFiles/dfu-flash | ${cmake_ninja_workdir}CMakeFiles/dfu-flash: CUSTOM_
 # Custom command for CMakeFiles/uf2
 
 build CMakeFiles/uf2 | ${cmake_ninja_workdir}CMakeFiles/uf2: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "UF2_CMD=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/gopre/.espressif/v5.3.5/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json;-o;/home/gopre/Desktop/motor-driver/build/bootloader/uf2.bin" -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_uf2_cmds.cmake
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "UF2_CMD=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;/home/gopre/.espressif/v5.3.5/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json;-o;/home/gopre/Desktop/motor-driver/build/bootloader/uf2.bin" -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_uf2_cmds.cmake
   pool = console
 
 
@@ -342,7 +342,7 @@ build CMakeFiles/uf2 | ${cmake_ninja_workdir}CMakeFiles/uf2: CUSTOM_COMMAND
 # Custom command for CMakeFiles/uf2-app
 
 build CMakeFiles/uf2-app | ${cmake_ninja_workdir}CMakeFiles/uf2-app: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "UF2_CMD=/home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python;/home/gopre/.espressif/v5.3.5/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json;-o;/home/gopre/Desktop/motor-driver/build/bootloader/uf2-app.bin;--bin;app" -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_uf2_cmds.cmake
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader && /home/gopre/.espressif/tools/cmake/3.30.2/bin/cmake -D IDF_PATH=/home/gopre/.espressif/v5.3.5/esp-idf -D "UF2_CMD=/home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python;/home/gopre/.espressif/v5.3.5/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/home/gopre/Desktop/motor-driver/build/bootloader/flasher_args.json;-o;/home/gopre/Desktop/motor-driver/build/bootloader/uf2-app.bin;--bin;app" -P /home/gopre/.espressif/v5.3.5/esp-idf/tools/cmake/run_uf2_cmds.cmake
   pool = console
 
 # =============================================================================
@@ -1455,7 +1455,7 @@ build esp-idf/efuse/rebuild_cache: phony esp-idf/efuse/CMakeFiles/rebuild_cache.
 # Custom command for esp-idf/efuse/CMakeFiles/efuse-common-table
 
 build esp-idf/efuse/CMakeFiles/efuse-common-table | ${cmake_ninja_workdir}esp-idf/efuse/CMakeFiles/efuse-common-table: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256
 
 
 #############################################
@@ -1478,7 +1478,7 @@ build esp-idf/efuse/CMakeFiles/efuse_custom_table | ${cmake_ninja_workdir}esp-id
 # Custom command for esp-idf/efuse/CMakeFiles/show-efuse-table
 
 build esp-idf/efuse/CMakeFiles/show-efuse-table | ${cmake_ninja_workdir}esp-idf/efuse/CMakeFiles/show-efuse-table: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256 --info
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256 --info
 
 
 #############################################
@@ -1493,7 +1493,7 @@ build esp-idf/efuse/CMakeFiles/show_efuse_table | ${cmake_ninja_workdir}esp-idf/
 # Custom command for esp-idf/efuse/CMakeFiles/efuse_test_table
 
 build esp-idf/efuse/CMakeFiles/efuse_test_table | ${cmake_ninja_workdir}esp-idf/efuse/CMakeFiles/efuse_test_table: CUSTOM_COMMAND
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/test/esp_efuse_test_table.csv -t esp32s3 --max_blk_len 256
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/efuse && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/efuse_table_gen.py /home/gopre/.espressif/v5.3.5/esp-idf/components/efuse/test/esp_efuse_test_table.csv -t esp32s3 --max_blk_len 256
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -2071,7 +2071,7 @@ build esp-idf/esptool_py/rebuild_cache: phony esp-idf/esptool_py/CMakeFiles/rebu
 # Custom command for esp-idf/esptool_py/CMakeFiles/bootloader_check_size
 
 build esp-idf/esptool_py/CMakeFiles/bootloader_check_size | ${cmake_ninja_workdir}esp-idf/esptool_py/CMakeFiles/bootloader_check_size: CUSTOM_COMMAND || _project_elf_src bootloader.elf esp-idf/bootloader_support/libbootloader_support.a esp-idf/efuse/libefuse.a esp-idf/esp_bootloader_format/libesp_bootloader_format.a esp-idf/esp_common/libesp_common.a esp-idf/esp_hw_support/libesp_hw_support.a esp-idf/esp_rom/libesp_rom.a esp-idf/esp_system/libesp_system.a esp-idf/hal/libhal.a esp-idf/log/liblog.a esp-idf/main/libmain.a esp-idf/micro-ecc/libmicro-ecc.a esp-idf/soc/libsoc.a esp-idf/spi_flash/libspi_flash.a esp-idf/xtensa/libxtensa.a gen_project_binary
-  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/esptool_py && /home/gopre/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin
+  COMMAND = cd /home/gopre/Desktop/motor-driver/build/bootloader/esp-idf/esptool_py && /home/gopre/.espressif/tools/python/v5.3.5/venv/bin/python /home/gopre/.espressif/v5.3.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/gopre/Desktop/motor-driver/build/bootloader/bootloader.bin
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
